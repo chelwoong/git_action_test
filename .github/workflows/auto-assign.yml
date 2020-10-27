@@ -1,7 +1,8 @@
 name: "Auto Assign"
 on:
-  issues:
-    types: [assigned]
+  project_card:
+    issues:
+      types: [assigned]
   
 jobs:
   assign_reviewer:

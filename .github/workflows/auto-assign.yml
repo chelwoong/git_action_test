@@ -1,12 +1,11 @@
 name: "Auto Assign"
 on:
-  issue:
-  
+  issues:
     types: [assigned]
   
 jobs:
   assign_reviewer:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - uses: shufo/auto-assign-reviewer-by-assignee@v1.1.0
       with:

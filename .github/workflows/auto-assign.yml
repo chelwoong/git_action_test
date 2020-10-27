@@ -8,8 +8,7 @@ jobs:
   assign_reviewer:
     runs-on: macos-latest
     steps:
-      - uses:
-        name: git_action_test
+      - name: git_action_test
         with:
           config: '.github/auto-assigner.yml'
           token: ${{ secrets.GITHUB_TOKEN }}
